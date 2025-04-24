@@ -1,0 +1,59 @@
+{
+  "name": "@cytoid/schema",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.9.0",
+  "description": "",
+  "license": "MIT",
+  "repository": "Cytoid/schema",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": "^20.17.0 || >=22.0.0"
+  },
+  "scripts": {
+    "build": "unbuild",
+    "play:prepare": "unbuild --stub",
+    "play": "pnpm -C playground play",
+    "dev": "vitest dev",
+    "lint": "eslint --cache .",
+    "lint:fix": "eslint --cache --fix .",
+    "prepack": "pnpm build",
+    "release": "pnpm test && changelogen --release --push && pnpm publish",
+    "test": "pnpm lint && pnpm test:types && vitest run --coverage",
+    "test:types": "tsc --noEmit --skipLibCheck"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.12.0",
+    "@types/node": "^22.14.1",
+    "@vitest/coverage-v8": "^3.1.2",
+    "changelogen": "^0.6.1",
+    "eslint": "^9.25.1",
+    "jiti": "2.4.2",
+    "typescript": "^5.8.3",
+    "unbuild": "^3.5.0",
+    "vitest": "^3.1.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ],
+    "ignoredBuiltDependencies": [
+      "unrs-resolver"
+    ]
+  }
+}
