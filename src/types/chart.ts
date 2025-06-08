@@ -19,7 +19,7 @@ export interface CytoidChart {
   page_list: CytoidChartPage[]
   tempo_list: CytoidChartTempo[]
   event_order_list: CytoidChartEventOrder[]
-  node_list: CytoidChartNode[]
+  note_list: CytoidChartNote[]
 }
 
 export interface CytoidChartPage {
@@ -67,7 +67,7 @@ export enum CytoidChartNodeType {
   CLICK_DRAG_CHILD = 7,
 }
 
-export interface CytoidChartNode {
+export interface CytoidChartNote {
   page_index: number
   type: CytoidChartNodeType
   id: number

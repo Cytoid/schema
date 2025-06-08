@@ -44,7 +44,7 @@ export const cytoidChartNodeTypeSchema = z.union([
   z.literal(7),
 ])
 
-export const cytoidChartNodeSchema = z.object({
+export const cytoidChartNoteSchema = z.object({
   page_index: z.number().check(z.int(), z.gte(0)),
   type: cytoidChartNodeTypeSchema,
   id: z.number().check(z.int(), z.gte(0)),
@@ -76,7 +76,7 @@ export const cytoidChartSchema = z.object({
   page_list: z.array(cytoidChartPageSchema),
   tempo_list: z.array(cytoidChartTempoSchema),
   event_order_list: z.array(cytoidChartEventOrderSchema),
-  node_list: z.array(cytoidChartNodeSchema),
+  note_list: z.array(cytoidChartNoteSchema),
 })
 
 export function parseCytoidChart(input: unknown) {
