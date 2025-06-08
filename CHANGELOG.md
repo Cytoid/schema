@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.3
+
+[compare changes](https://github.com/Cytoid/schema/compare/v0.0.2...v0.0.3)
+
+### 🩹 Fixes
+
+- Typo note ([58efa77](https://github.com/Cytoid/schema/commit/58efa77))
+
+### ❤️ Contributors
+
+- Teages ([@Teages](https://github.com/Teages))
+
 ## v0.0.2
 
 [compare changes](https://github.com/Cytoid/schema/compare/v0.0.1...v0.0.2)
