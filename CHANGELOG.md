@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.2
+
+[compare changes](https://github.com/Cytoid/schema/compare/v0.0.1...v0.0.2)
+
+### 🩹 Fixes
+
+- Wrong event order field naming ([4044a69](https://github.com/Cytoid/schema/commit/4044a69))
+
+### ❤️ Contributors
+
+- Teages ([@Teages](https://github.com/Teages))
+
 ## v0.0.1
 
 
