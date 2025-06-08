@@ -30,12 +30,7 @@ Import:
 
 ```js
 // ESM
-import { test } from '@cytoid/schema'
-```
-
-```js
-// CommonJS
-const { test } = require('@cytoid/schema')
+import { CytoidChart, CytoidLevel } from '@cytoid/schema/types'
 ```
 
 ## Development
