@@ -1,8 +1,6 @@
-import { describe, expect, it } from 'vitest'
-import { test } from '../src'
+import { describe, it } from 'vitest'
 
 describe('@cytoid/schema', () => {
   it.todo('works', () => {
-    expect(test()).toBe('works!')
   })
 })
