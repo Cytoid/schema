@@ -75,7 +75,7 @@ export const cytoidChartSchema = z.object({
 
   page_list: z.array(cytoidChartPageSchema),
   tempo_list: z.array(cytoidChartTempoSchema),
-  event_order: z.array(cytoidChartEventOrderSchema),
+  event_order_list: z.array(cytoidChartEventOrderSchema),
   node_list: z.array(cytoidChartNodeSchema),
 })
 

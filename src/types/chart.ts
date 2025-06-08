@@ -18,7 +18,7 @@ export interface CytoidChart {
 
   page_list: CytoidChartPage[]
   tempo_list: CytoidChartTempo[]
-  event_order: CytoidChartEventOrder[]
+  event_order_list: CytoidChartEventOrder[]
   node_list: CytoidChartNode[]
 }
 
