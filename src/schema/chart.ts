@@ -48,6 +48,7 @@ export const cytoidChartNoteSchema = z.object({
   page_index: z.number().check(z.int(), z.gte(0)),
   type: cytoidChartNodeTypeSchema,
   id: z.number().check(z.int(), z.gte(0)),
+  x: z.number().check(z.gte(0), z.lte(1)),
   tick: cytoidChartTickSchema,
   has_sibling: z.boolean(),
   hold_tick: cytoidChartTickSchema,

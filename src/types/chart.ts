@@ -71,6 +71,7 @@ export interface CytoidChartNote {
   page_index: number
   type: CytoidChartNodeType
   id: number
+  x: number
   tick: number
   has_sibling: boolean
   hold_tick: number
