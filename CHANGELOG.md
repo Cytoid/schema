@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.4
+
+[compare changes](https://github.com/Cytoid/schema/compare/v0.0.3...v0.0.4)
+
+### 🩹 Fixes
+
+- Add missing x property to CytoidChartNote ([5750bfc](https://github.com/Cytoid/schema/commit/5750bfc))
+
+### ❤️ Contributors
+
+- Teages ([@Teages](https://github.com/Teages))
+
 ## v0.0.3
 
 [compare changes](https://github.com/Cytoid/schema/compare/v0.0.2...v0.0.3)
